@@ -89,7 +89,7 @@
   </section>
 
   <!-- Search & Filter Controls -->
-  <section class="menu-controls">
+  <div class="menu-controls">
     <div class="container">
       <div class="menu-controls-inner">
         <input
@@ -99,15 +99,15 @@
           placeholder="Search menu items..."
           aria-label="Search menu items"
         >
-        <div class="filter-buttons">
-          <button class="filter-btn" data-category="all">All</button>
-          <button class="filter-btn" data-category="signature">Signature</button>
-          <button class="filter-btn" data-category="classic">Classic</button>
-          <button class="filter-btn" data-category="sides">Sides &amp; Drinks</button>
+        <div class="filter-buttons" role="group" aria-label="Filter by category">
+          <button class="filter-btn" type="button" data-category="all">All</button>
+          <button class="filter-btn" type="button" data-category="signature">Signature</button>
+          <button class="filter-btn" type="button" data-category="classic">Classic</button>
+          <button class="filter-btn" type="button" data-category="sides">Sides &amp; Drinks</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Signature Pizzas -->
   <section class="menu menu-featured">
